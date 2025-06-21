@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الامتحان العشوائي - أنظمة موزعة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>امتحان عشوائي (40 سؤال)</h1>
+
+        <div id="quiz-section">
+            <form id="random-quiz-form" class="quiz-form">
+                </form>
+            <button id="submit-random-quiz-btn" class="btn btn-primary">عرض النتيجة</button>
+        </div>
+
+        <div id="results-section" class="results-section" style="display:none;">
+            <h2>نتيجتك: <span id="score-display"></span></h2>
+            <div id="review-section">
+                </div>
+            <button onclick="window.location.href='index.html'" class="btn btn-secondary">العودة للصفحة الرئيسية</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadRandomExam(); // Function to load random exam from script.js
+            document.getElementById('submit-random-quiz-btn').addEventListener('click', submitRandomQuiz); // Function from script.js
+        });
+    </script>
+</body>
+</html>

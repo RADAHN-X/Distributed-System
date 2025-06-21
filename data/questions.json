@@ -1,0 +1,1420 @@
+{
+  "sheets": [
+    {
+      "name": "Sheet 1",
+      "tutorial_name": "Intro to Distributed System",
+      "questions": [
+        {
+          "id": "1-1",
+          "type": "multiple_choice",
+          "question_text": "What is a distributed system?",
+          "options": {
+            "A": "A single computer system",
+            "B": "A system with a global clock",
+            "C": "A system that does not allow communication between nodes",
+            "D": "A collection of autonomous computing elements that appear as a single coherent system"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "id": "1-2",
+          "type": "multiple_choice",
+          "question_text": "What is a characteristic feature of a distributed system?",
+          "options": {
+            "A": "Local clock synchronization",
+            "B": "Single coherent system appearance",
+            "C": "A & B",
+            "D": "Centralized control"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "1-3",
+          "type": "multiple_choice",
+          "question_text": "What is an overlay network in a distributed system?",
+          "options": {
+            "A": "A physical network",
+            "B": "A virtual or logical network created on top of an existing physical network",
+            "C": "A network with no communication paths",
+            "D": "A network with a single node"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "1-4",
+          "type": "multiple_choice",
+          "question_text": "What is a structured overlay network?",
+          "options": {
+            "A": "A network where each node has a well-defined set of neighbors",
+            "B": "A network where nodes have randomly selected neighbors",
+            "C": "A network with no communication paths",
+            "D": "A network with a single node"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "1-5",
+          "type": "multiple_choice",
+          "question_text": "What is an unstructured overlay network?",
+          "options": {
+            "A": "A network where each node has a well-defined set of neighbors",
+            "B": "A network where nodes have randomly selected neighbors",
+            "C": "A network with no communication paths",
+            "D": "A network with a single node"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "1-6",
+          "type": "multiple_choice",
+          "question_text": "What is a partial failure in a distributed system?",
+          "options": {
+            "A": "A failure where the entire system stops working",
+            "B": "A failure where no nodes are affected",
+            "C": "A failure where communication is always maintained",
+            "D": "A failure where only a part of the system fails"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "id": "1-7",
+          "type": "multiple_choice",
+          "question_text": "What is an open group in a distributed system?",
+          "options": {
+            "A": "A group where only specific nodes can join",
+            "B": "A group with no communication",
+            "C": "A group where any node is allowed to join and communicate",
+            "D": "A group with a single node"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "1-8",
+          "type": "multiple_choice",
+          "question_text": "What is the main challenge in synchronizing distributed systems?",
+          "options": {
+            "A": "The presence of a global clock",
+            "B": "The lack of a global clock",
+            "C": "The inability of nodes to communicate",
+            "D": "The absence of autonomous nodes"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "1-9",
+          "type": "true_false",
+          "question_text": "In a distributed system, nodes operate independently and can exchange information.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "1-10",
+          "type": "true_false",
+          "question_text": "A distributed system requires a global clock for synchronization.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "1-11",
+          "type": "true_false",
+          "question_text": "An overlay network is a physical network.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "1-12",
+          "type": "true_false",
+          "question_text": "Peer-to-peer systems are an example of an overlay network.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "1-13",
+          "type": "true_false",
+          "question_text": "In a structured overlay network, nodes have randomly selected neighbors.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "1-14",
+          "type": "true_false",
+          "question_text": "In an open group, any node is allowed to join and communicate.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "1-15",
+          "type": "true_false",
+          "question_text": "In a closed group, only specific nodes can communicate with each other.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 2",
+      "tutorial_name": "Distributed System",
+      "questions": [
+        {
+          "id": "2-1",
+          "type": "multiple_choice",
+          "question_text": "What is the primary purpose of middleware in a distributed system?",
+          "options": {
+            "A": "To replace the operating system",
+            "B": "To facilitate communication and integration between distributed components",
+            "C": "To increase hardware complexity",
+            "D": "To reduce the need for networking"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "2-2",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of Message-Oriented Middleware (MOM)?",
+          "options": {
+            "A": "A distributed e-commerce system with asynchronous communication",
+            "B": "A single-threaded application",
+            "C": "A standalone database system",
+            "D": "A local file storage system"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "2-3",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a key characteristic of a distributed system?",
+          "options": {
+            "A": "Resource sharing",
+            "B": "Centralized control",
+            "C": "Single point of failure",
+            "D": "Limited scalability"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "2-4",
+          "type": "multiple_choice",
+          "question_text": "What is the main goal of resource sharing in a distributed system?",
+          "options": {
+            "A": "To limit access to resources",
+            "B": "To reduce the need for networking",
+            "C": "To increase hardware complexity",
+            "D": "To facilitate users' access to remote resources"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "id": "2-5",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of a Peer-to-Peer (P2P) network?",
+          "options": {
+            "A": "A centralized file-sharing system",
+            "B": "A decentralized file-sharing system",
+            "C": "A single-server database system",
+            "D": "A local storage device"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "2-6",
+          "type": "multiple_choice",
+          "question_text": "What does 'openness' in a distributed system refer to?",
+          "options": {
+            "A": "The ability to extend and improve hardware and software components",
+            "B": "The ability to limit access to resources",
+            "C": "The ability to centralize control",
+            "D": "The ability to reduce scalability"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "2-7",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a scalability dimension in distributed systems?",
+          "options": {
+            "A": "Number of users and/or processes",
+            "B": "Single point of failure",
+            "C": "Centralized control",
+            "D": "Limited resource sharing"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "2-8",
+          "type": "multiple_choice",
+          "question_text": "What is the purpose of caching in a distributed system?",
+          "options": {
+            "A": "To increase latency",
+            "B": "To reduce responsiveness",
+            "C": "To store frequently accessed data closer to users",
+            "D": "To limit resource sharing"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "2-9",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of a distributed file system?",
+          "options": {
+            "A": "Google File System (GFS)",
+            "B": "Local file storage",
+            "C": "Single-server database",
+            "D": "Centralized file-sharing system"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "2-10",
+          "type": "multiple_choice",
+          "question_text": "Creating copies of data or resources across multiple nodes to ensure data availability",
+          "options": {
+            "A": "Replication",
+            "B": "Cashing",
+            "C": "Migration",
+            "D": "Load balancing"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "2-11",
+          "type": "true_false",
+          "question_text": "Middleware acts as an intermediary between different software applications in a distributed system.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "2-12",
+          "type": "true_false",
+          "question_text": "As an example for middleware, Message-Oriented Middleware (MOM) is used for synchronous communication in distributed systems.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "2-13",
+          "type": "true_false",
+          "question_text": "Resource sharing in a distributed system is limited to computational resources only.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "2-14",
+          "type": "true_false",
+          "question_text": "Peer-to-Peer (P2P) networks rely on centralized servers for resource sharing.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "2-15",
+          "type": "true_false",
+          "question_text": "Openness in a distributed system refers to the ability to add or remove components without compatibility issues.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "2-16",
+          "type": "true_false",
+          "question_text": "Caching in a distributed system is used to reduce latency and improve responsiveness.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "2-17",
+          "type": "true_false",
+          "question_text": "Within the distributed system, the performance of tasks will be faster than the parallel system",
+          "correct_answer": "False"
+        },
+        {
+          "id": "2-18",
+          "type": "true_false",
+          "question_text": "In the parallel system, the processors need to apply a synchronization algorithm",
+          "correct_answer": "False"
+        },
+        {
+          "id": "2-19",
+          "type": "true_false",
+          "question_text": "One of the advantages of a distributed system is the shared memory between its elements",
+          "correct_answer": "False"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 3",
+      "tutorial_name": "Distributed system",
+      "questions": [
+        {
+          "id": "3-1",
+          "type": "multiple_choice",
+          "question_text": "What is the primary goal of distribution transparency in a distributed system?",
+          "options": {
+            "A": "To increase hardware complexity",
+            "B": "To hide system intricacies and present the system as a single coherent system",
+            "C": "To reduce the need for networking",
+            "D": "To limit resource sharing"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "3-2",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a challenge in achieving full distribution transparency?",
+          "options": {
+            "A": "Communication latencies cannot be hidden",
+            "B": "Full transparency improves performance",
+            "C": "Replicas are always up to date with the master",
+            "D": "Failures are easy to distinguish from slow systems"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "3-3",
+          "type": "multiple_choice",
+          "question_text": "What is utility computing?",
+          "options": {
+            "A": "A model where computing resources are provided as needed and charged based on usage",
+            "B": "A model where computing resources are provided at a flat rate",
+            "C": "A model where computing resources are only available locally",
+            "D": "A model where computing resources are not accessible over the internet"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "3-4",
+          "type": "multiple_choice",
+          "question_text": "What is grid computing primarily targeted at?",
+          "options": {
+            "A": "Enterprise computing",
+            "B": "Scientific computing",
+            "C": "Personal computing",
+            "D": "Gaming"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "3-5",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of Infrastructure as a Service (IaaS)?",
+          "options": {
+            "A": "Google App Engine",
+            "B": "Amazon EC2",
+            "C": "Microsoft 365",
+            "D": "Dropbox"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "3-6",
+          "type": "multiple_choice",
+          "question_text": "What is the key feature of Platform as a Service (PaaS)?",
+          "options": {
+            "A": "Provides virtualized computing resources",
+            "B": "Provides a development platform with tools and libraries",
+            "C": "Delivers software applications over the internet",
+            "D": "Offers automatic updates for software"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "3-7",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of Software as a Service (SaaS)?",
+          "options": {
+            "A": "Google Compute Engine",
+            "B": "Microsoft Azure App Services",
+            "C": "Google Workspace (Gmail, Drive)",
+            "D": "Heroku"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "3-8",
+          "type": "multiple_choice",
+          "question_text": "What is the primary feature of Software as a Service (SaaS)?",
+          "options": {
+            "A": "Provides virtualized computing resources",
+            "B": "Offers web-based access and automatic updates",
+            "C": "Provides a development platform",
+            "D": "Focuses on scientific computing"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "3-9",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a key milestone in the evolution of cloud computing?",
+          "options": {
+            "A": "The invention of the personal computer",
+            "B": "The introduction of utility computing in the 1960s",
+            "C": "The development of local area networks (LANs)",
+            "D": "The creation of the first operating system"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "3-10",
+          "type": "multiple_choice",
+          "question_text": "The mobile communication within different locations can be seen as an example for",
+          "options": {
+            "A": "Relocation",
+            "B": "Allocation",
+            "C": "Migration",
+            "D": "Replication"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "3-11",
+          "type": "true_false",
+          "question_text": "Distribution transparency aims to hide the complexities of a distributed system.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "3-12",
+          "type": "true_false",
+          "question_text": "Full distribution transparency is always achievable without any performance costs.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "3-13",
+          "type": "true_false",
+          "question_text": "Grid computing is primarily targeted at enterprise computing.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "3-14",
+          "type": "true_false",
+          "question_text": "Amazon EC2 is an example of Platform as a Service (PaaS).",
+          "correct_answer": "False"
+        },
+        {
+          "id": "3-15",
+          "type": "true_false",
+          "question_text": "Google App Engine is an example of Software as a Service (SaaS).",
+          "correct_answer": "False"
+        },
+        {
+          "id": "3-16",
+          "type": "true_false",
+          "question_text": "Software as a Service (SaaS) delivers software applications over the internet on a subscription basis.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "3-17",
+          "type": "true_false",
+          "question_text": "Platform as a Service (PaaS) provides virtualized computing resources over the internet.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "3-18",
+          "type": "true_false",
+          "question_text": "The evolution of cloud computing began with the invention of the personal computer.",
+          "correct_answer": "False"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 4",
+      "tutorial_name": "Intro to Cloud Computing",
+      "questions": [
+        {
+          "id": "4-1",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a characteristic of public cloud deployment?",
+          "options": {
+            "A": "Dedicated to a single organization",
+            "B": "Hosted by third-party providers and shared among multiple users",
+            "C": "Combines public and private clouds",
+            "D": "Shared by multiple organizations with similar needs"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "4-2",
+          "type": "multiple_choice",
+          "question_text": "What is the primary advantage of a private cloud?",
+          "options": {
+            "A": "Cost-effectiveness",
+            "B": "Greater control, security, and compliance",
+            "C": "Flexibility and scalability",
+            "D": "Cost-sharing among organizations"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "4-3",
+          "type": "multiple_choice",
+          "question_text": "Which cloud deployment model combines public and private clouds?",
+          "options": {
+            "A": "Public Cloud",
+            "B": "Private Cloud",
+            "C": "Hybrid Cloud",
+            "D": "Community Cloud"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "4-4",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of a public cloud provider?",
+          "options": {
+            "A": "VMware Private Cloud",
+            "B": "AWS (Amazon Web Services)",
+            "C": "IBM Cloud Private",
+            "D": "OpenStack"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "4-5",
+          "type": "multiple_choice",
+          "question_text": "What is the primary benefit of server virtualization?",
+          "options": {
+            "A": "Improved resource utilization",
+            "B": "Enhanced data redundancy",
+            "C": "Flexible network configurations",
+            "D": "Better traffic management"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "4-6",
+          "type": "multiple_choice",
+          "question_text": "Which technology is used to achieve server virtualization?",
+          "options": {
+            "A": "VLANs (Virtual LANs)",
+            "B": "Hypervisor",
+            "C": "SAN (Storage Area Networks)",
+            "D": "NAS (Network-Attached Storage)"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "4-7",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of network virtualization?",
+          "options": {
+            "A": "VLANs (Virtual LANs)",
+            "B": "Hypervisor",
+            "C": "SAN (Storage Area Networks)",
+            "D": "NAS (Network-Attached Storage)"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "4-8",
+          "type": "multiple_choice",
+          "question_text": "What is the main advantage of network virtualization?",
+          "options": {
+            "A": "Improved resource utilization",
+            "B": "Enhanced data redundancy",
+            "C": "Flexible network configurations",
+            "D": "Reduced hardware costs"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "4-9",
+          "type": "true_false",
+          "question_text": "Public cloud deployment is cost-effective and scalable.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "4-10",
+          "type": "true_false",
+          "question_text": "Private cloud deployment is shared among multiple users.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "4-11",
+          "type": "true_false",
+          "question_text": "Hybrid cloud combines public and private clouds.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "4-12",
+          "type": "true_false",
+          "question_text": "AWS (Amazon Web Services) is an example of a private cloud provider.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "4-13",
+          "type": "true_false",
+          "question_text": "Server virtualization allows multiple virtual machines to run on a single physical server.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "4-14",
+          "type": "true_false",
+          "question_text": "Storage virtualization improves data redundancy and disaster recovery.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "4-15",
+          "type": "true_false",
+          "question_text": "Virtual LANS (VLANs) are an example of network virtualization.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "4-16",
+          "type": "true_false",
+          "question_text": "The primary advantage of virtualization is reduced hardware costs and improved resource utilization.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 5",
+      "tutorial_name": "Intro to Hypervisor",
+      "questions": [
+        {
+          "id": "5-1",
+          "type": "multiple_choice",
+          "question_text": "What is a hypervisor also known as?",
+          "options": {
+            "A": "Virtual Machine Manager (VMM)",
+            "B": "Virtual Machine Controller (VMC)",
+            "C": "Virtual Machine Allocator (VMA)",
+            "D": "Virtual Machine Monitor (VMM)"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "id": "5-2",
+          "type": "multiple_choice",
+          "question_text": "Which type of hypervisor runs directly on the host hardware?",
+          "options": {
+            "A": "Type 1 (Bare Metal Hypervisors)",
+            "B": "Type 2 (Hosted Hypervisors)",
+            "C": "Type 3 (Hybrid Hypervisors)",
+            "D": "Type 4 (Embedded Hypervisors)"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "5-3",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is an example of a Type 2 hypervisor?",
+          "options": {
+            "A": "VMware ESXi",
+            "B": "Microsoft Hyper-V",
+            "C": "VMware Workstation",
+            "D": "Xen"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "5-4",
+          "type": "multiple_choice",
+          "question_text": "Which cloud service provider is the most mature and widely adopted?",
+          "options": {
+            "A": "Microsoft Azure",
+            "B": "Google Cloud Platform (GCP)",
+            "C": "Amazon Web Services (AWS)",
+            "D": "IBM Cloud"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "5-5",
+          "type": "multiple_choice",
+          "question_text": "Which AWS service is used for relational databases?",
+          "options": {
+            "A": "DynamoDB",
+            "B": "RDS",
+            "C": "S3",
+            "D": "SageMaker"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "5-6",
+          "type": "multiple_choice",
+          "question_text": "What is SageMaker service used for in AWS?",
+          "options": {
+            "A": "Image recognition",
+            "B": "Building and deploying ML models",
+            "C": "Virtual private cloud management",
+            "D": "DNS service management"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "5-7",
+          "type": "multiple_choice",
+          "question_text": "Which layer of cloud architecture includes hypervisors and virtual machines?",
+          "options": {
+            "A": "Infrastructure Layer",
+            "B": "Virtualization Layer",
+            "C": "Platform Layer",
+            "D": "Application Layer"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "5-8",
+          "type": "true_false",
+          "question_text": "Type 2 hypervisors run directly on the host hardware.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "5-9",
+          "type": "true_false",
+          "question_text": "True or False: Docker is an example of a Type 1 hypervisor.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "5-10",
+          "type": "true_false",
+          "question_text": "True or False: AWS offers over 200 services.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "5-11",
+          "type": "true_false",
+          "question_text": "True or False: Rekognition is an AWS service for image and video analysis.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 6",
+      "tutorial_name": "Resource Management",
+      "questions": [
+        {
+          "id": "6-1",
+          "type": "multiple_choice",
+          "question_text": "What is the primary goal of resource management in cloud computing?",
+          "options": {
+            "A": "To increase the cost of cloud services",
+            "B": "To allocate and optimize computing resources efficiently",
+            "C": "To reduce the number of users accessing the cloud",
+            "D": "To limit the scalability of applications"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "6-2",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a key characteristic of scalability in cloud computing?",
+          "options": {
+            "A": "It ensures that the system cannot grow or shrink.",
+            "B": "It is a design feature that allows the system to handle an increased workload.",
+            "C": "It limits the performance of the system.",
+            "D": "It requires manual intervention for all scaling operations."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "6-3",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a type of scalability in cloud computing?",
+          "options": {
+            "A": "Vertical scaling and horizontal scaling",
+            "B": "Manual scaling and automatic scaling",
+            "C": "Static scaling and dynamic scaling",
+            "D": "Internal scaling and external scaling"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "6-4",
+          "type": "multiple_choice",
+          "question_text": "What is the primary function of a load balancer in cloud computing?",
+          "options": {
+            "A": "To increase the load on a single server",
+            "B": "To distribute incoming network traffic across multiple servers",
+            "C": "To reduce the performance of the system",
+            "D": "To limit the number of users accessing the system"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "6-5",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a prerequisite for live VM migration?",
+          "options": {
+            "A": "The source and destination servers must have different hardware configurations.",
+            "B": "The source and destination servers must run different versions of the hypervisor.",
+            "C": "The source and destination servers must have access to the same storage system.",
+            "D": "The source and destination servers must be on different networks."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "6-6",
+          "type": "multiple_choice",
+          "question_text": "Which of the following is a disadvantage of post-copy live migration?",
+          "options": {
+            "A": "It has minimal downtime.",
+            "B": "It is suitable for VMs with high memory write activity.",
+            "C": "It can cause performance degradation due to demand paging.",
+            "D": "It does not require iterative copying of dirty pages."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "6-7",
+          "type": "multiple_choice",
+          "question_text": "What is the primary purpose of Kubernetes in cloud computing?",
+          "options": {
+            "A": "To manually manage containerized applications",
+            "B": "To automate the deployment, scaling, and management of containerized applications",
+            "C": "To reduce the scalability of applications",
+            "D": "To increase the cost of cloud services"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "6-8",
+          "type": "true_false",
+          "question_text": "Elasticity in cloud computing refers to the ability to scale resources up or down based on demand.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "6-9",
+          "type": "true_false",
+          "question_text": "Multi-tenancy in cloud computing ensures that each user has a completely isolated infrastructure.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "6-10",
+          "type": "true_false",
+          "question_text": "Vertical scaling involves adding more instances of resources, such as servers, to a cluster.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "6-11",
+          "type": "true_false",
+          "question_text": "Load balancers in cloud computing are used to increase the load on a single server.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "6-12",
+          "type": "true_false",
+          "question_text": "Live VM migration requires the source and destination servers to have different hardware configurations.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "6-13",
+          "type": "true_false",
+          "question_text": "Pre-copy live migration is suitable for VMs with high memory write activity.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "6-14",
+          "type": "true_false",
+          "question_text": "Post-copy live migration involves transferring memory pages on-demand from the source host.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "6-15",
+          "type": "true_false",
+          "question_text": "Kubernetes is an open-source platform that automates the deployment and scaling of containerized applications.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "6-16",
+          "type": "true_false",
+          "question_text": "Terraform is a tool used for declarative configuration management in cloud computing.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 7",
+      "tutorial_name": "Replication",
+      "questions": [
+        {
+          "id": "7-1",
+          "type": "multiple_choice",
+          "question_text": "What is the primary purpose of data replication in distributed systems?",
+          "options": {
+            "A": "To reduce storage costs",
+            "B": "To improve reliability, performance, and fault tolerance",
+            "C": "To eliminate the need for backups",
+            "D": "To decrease network bandwidth usage"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "7-2",
+          "type": "multiple_choice",
+          "question_text": "Which type of replication ensures all replicas execute the same sequence of operations?",
+          "options": {
+            "A": "Primary-Backup Replication",
+            "B": "Quorum-Based Replication",
+            "C": "State Machine Replication",
+            "D": "Asynchronous Replication"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "7-3",
+          "type": "multiple_choice",
+          "question_text": "What is a key characteristic of Quorum-Based Replication?",
+          "options": {
+            "A": "It requires all replicas to respond before acknowledging a write",
+            "B": "It uses a subset of servers (quorum) to approve operations",
+            "C": "It only works in single-node systems",
+            "D": "It eliminates the need for consistency checks"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "7-4",
+          "type": "multiple_choice",
+          "question_text": "What is a drawback of Eventual Consistency?",
+          "options": {
+            "A": "High latency for all operations",
+            "B": "Temporary inconsistencies until replicas converge",
+            "C": "Inability to handle network partitions",
+            "D": "Requires manual conflict resolution for every read"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "7-5",
+          "type": "multiple_choice",
+          "question_text": "Which consistency model ensures that a client always sees its writes, even if others see stale data?",
+          "options": {
+            "A": "Read-Your-Writes Consistency",
+            "B": "Causal Consistency",
+            "C": "Monotonic Read Consistency",
+            "D": "Strong Consistency"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "id": "7-6",
+          "type": "multiple_choice",
+          "question_text": "Which consistency model guarantees that all nodes see the most recent write immediately?",
+          "options": {
+            "A": "Eventual Consistency",
+            "B": "Strong Consistency",
+            "C": "Causal Consistency",
+            "D": "Monotonic Read Consistency"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "7-7",
+          "type": "true_false",
+          "question_text": "Replication in distributed systems is primarily used to reduce storage costs.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "7-8",
+          "type": "true_false",
+          "question_text": "State Machine Replication ensures all replicas execute the same sequence of operations.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "7-9",
+          "type": "true_false",
+          "question_text": "In Primary-Backup replication, if the primary fails, the system stops functioning permanently.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "7-10",
+          "type": "true_false",
+          "question_text": "Quorum-based replication requires approval from all servers for every operation.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "7-11",
+          "type": "true_false",
+          "question_text": "Eventual Consistency guarantees that all replicas will eventually converge to the same state if no new updates are made.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "7-12",
+          "type": "true_false",
+          "question_text": "Strong Consistency is ideal for systems where high availability is more important than up-to-date data.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "7-13",
+          "type": "true_false",
+          "question_text": "Read-Your-Writes Consistency ensures that all clients see the latest writes immediately.",
+          "correct_answer": "False"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 8",
+      "tutorial_name": "Scheduling",
+      "questions": [
+        {
+          "id": "8-1",
+          "type": "multiple_choice",
+          "question_text": "What is the primary goal of scheduling in cloud computing?",
+          "options": {
+            "A": "To increase hardware costs",
+            "B": "To map jobs to VMs and allocate resources efficiently",
+            "C": "To reduce network bandwidth",
+            "D": "To eliminate virtual machines"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "8-2",
+          "type": "multiple_choice",
+          "question_text": "What is the main characteristic of Round Robin scheduling?",
+          "options": {
+            "A": "Tasks are executed based on priority",
+            "B": "Tasks are assigned in a cyclic order with a fixed time quantum",
+            "C": "Longest tasks are executed first",
+            "D": "Tasks are randomly assigned to resources"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "8-3",
+          "type": "multiple_choice",
+          "question_text": "Which scheduling algorithm executes tasks in the order they arrive?",
+          "options": {
+            "A": "Shortest Job First (SJF)",
+            "B": "Priority Scheduling",
+            "C": "First-Come-First-Served (FCFS)",
+            "D": "Load Balancing Scheduling"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "8-4",
+          "type": "multiple_choice",
+          "question_text": "Which scheduling algorithm prioritizes tasks with the shortest execution time?",
+          "options": {
+            "A": "Round Robin",
+            "B": "Priority Scheduling",
+            "C": "Shortest Job First (SJF)",
+            "D": "Deadline Constraint Scheduling"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "8-5",
+          "type": "multiple_choice",
+          "question_text": "What is a key advantage of Priority Scheduling?",
+          "options": {
+            "A": "Ensures all tasks get equal time",
+            "B": "Executes critical tasks first",
+            "C": "Minimizes context switching",
+            "D": "Guarantees energy efficiency"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "8-6",
+          "type": "multiple_choice",
+          "question_text": "What problem can occur in Priority Scheduling if not managed properly?",
+          "options": {
+            "A": "Deadlock",
+            "B": "Priority Inversion",
+            "C": "Memory Leak",
+            "D": "Network Congestion"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "8-7",
+          "type": "true_false",
+          "question_text": "Round Robin scheduling guarantees that no task monopolizes resources.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "8-8",
+          "type": "true_false",
+          "question_text": "FCFS scheduling is optimal for minimizing waiting time for all tasks.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "8-9",
+          "type": "true_false",
+          "question_text": "SJF scheduling always results in the lowest average waiting time.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "8-10",
+          "type": "true_false",
+          "question_text": "Priority Scheduling cannot be combined with FCFS for tasks of equal priority.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "8-11",
+          "type": "true_false",
+          "question_text": "Energy-Aware Scheduling optimizes for performance only.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "8-12",
+          "type": "true_false",
+          "question_text": "Response time includes only the time a task spends executing, not waiting.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "8-13",
+          "type": "true_false",
+          "question_text": "Workflow Scheduling is used for tasks with dependencies.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 9",
+      "tutorial_name": "Fault tolerance",
+      "questions": [
+        {
+          "id": "9-1",
+          "type": "multiple_choice",
+          "question_text": "What is the primary goal of fault tolerance in cloud computing?",
+          "options": {
+            "A": "To increase hardware costs",
+            "B": "To ensure continuous operation despite faults",
+            "C": "To reduce network bandwidth usage",
+            "D": "To eliminate the need for maintenance"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "9-2",
+          "type": "multiple_choice",
+          "question_text": "Which of these represents the root cause of a system problem?",
+          "options": {
+            "A": "Error",
+            "B": "Failure",
+            "C": "Fault",
+            "D": "Crash"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "9-3",
+          "type": "multiple_choice",
+          "question_text": "Which type of failure occurs when a component fails to transmit an expected message?",
+          "options": {
+            "A": "Value failure",
+            "B": "Receive omission",
+            "C": "Send omission",
+            "D": "Byzantine failure"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "9-4",
+          "type": "multiple_choice",
+          "question_text": "What is an example of a hardware failure?",
+          "options": {
+            "A": "Kernel panic",
+            "B": "Power supply failure",
+            "C": "Invalid JSON input",
+            "D": "Firewall misconfiguration"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "9-5",
+          "type": "multiple_choice",
+          "question_text": "Which failure classification focuses on how a system fails?",
+          "options": {
+            "A": "Operations-centric",
+            "B": "User-centric",
+            "C": "Component-centric",
+            "D": "Network-centric"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "9-6",
+          "type": "multiple_choice",
+          "question_text": "What type of failure occurs when a system returns incorrect data?",
+          "options": {
+            "A": "Timing failure",
+            "B": "Value failure",
+            "C": "Omission failure",
+            "D": "Byzantine failure"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "9-7",
+          "type": "multiple_choice",
+          "question_text": "Which of these is NOT a stage in the failure progression chain?",
+          "options": {
+            "A": "Fault",
+            "B": "Error",
+            "C": "Warning",
+            "D": "Failure"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "9-8",
+          "type": "true_false",
+          "question_text": "A fault always immediately results in a system failure.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "9-9",
+          "type": "true_false",
+          "question_text": "Cloud fault tolerance helps maintain data confidentiality, integrity, and availability.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "9-10",
+          "type": "true_false",
+          "question_text": "Receive omission occurs when a system fails to send an expected message.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "9-11",
+          "type": "true_false",
+          "question_text": "A Byzantine failure involves predictable system behavior.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "9-12",
+          "type": "true_false",
+          "question_text": "Network failures can include entire data center outages.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "9-13",
+          "type": "true_false",
+          "question_text": "Fault tolerance is only concerned with hardware failures.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "9-14",
+          "type": "true_false",
+          "question_text": "An unhandled exception in Java code would be classified as a software failure.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "9-15",
+          "type": "true_false",
+          "question_text": "Timing failures occur when systems meet all their deadlines.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "9-16",
+          "type": "true_false",
+          "question_text": "Component-centric classification helps engineers debug system issues.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "name": "Sheet 10",
+      "tutorial_name": "Fault tolerance",
+      "questions": [
+        {
+          "id": "10-1",
+          "type": "multiple_choice",
+          "question_text": "What is the primary purpose of reactive fault tolerance approaches?",
+          "options": {
+            "A": "To predict failures before they occur",
+            "B": "To minimize the impact of failures after they happen",
+            "C": "To completely eliminate all system faults",
+            "D": "To reduce hardware costs in cloud systems"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "10-2",
+          "type": "multiple_choice",
+          "question_text": "Which technique involves saving a system's state periodically to enable recovery from failures?",
+          "options": {
+            "A": "Software rejuvenation",
+            "B": "Checkpointing",
+            "C": "Pre-emptive migration",
+            "D": "Load balancing"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "10-3",
+          "type": "multiple_choice",
+          "question_text": "Which proactive fault tolerance approach involves periodic system reboots?",
+          "options": {
+            "A": "Self-healing",
+            "B": "Software rejuvenation",
+            "C": "Pre-emptive migration",
+            "D": "Rescue workflow"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "10-4",
+          "type": "multiple_choice",
+          "question_text": "What does the process pairs approach in redundancy involve?",
+          "options": {
+            "A": "Three identical processes running simultaneously",
+            "B": "A primary process with a backup that takes over if needed",
+            "C": "No backup processes at all",
+            "D": "Random process selection during failures"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "10-5",
+          "type": "multiple_choice",
+          "question_text": "Which metric measures the average time between inherent system failures?",
+          "options": {
+            "A": "MTTR",
+            "B": "Fault detection time",
+            "C": "MTBF",
+            "D": "Recovery time objective"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "id": "10-6",
+          "type": "multiple_choice",
+          "question_text": "What is the goal of pre-emptive migration in proactive fault tolerance?",
+          "options": {
+            "A": "To wait until failures occur before taking action",
+            "B": "To move applications from unhealthy nodes before failures happen",
+            "C": "To reduce the number of virtual machines in use",
+            "D": "To increase hardware resource utilization"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "id": "10-7",
+          "type": "true_false",
+          "question_text": "Reactive fault tolerance approaches are used to predict failures before they occur.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "10-8",
+          "type": "true_false",
+          "question_text": "Checkpointing prevents the loss of useful computation by saving system states periodically.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "10-9",
+          "type": "true_false",
+          "question_text": "In task resubmission, failed tasks are always resubmitted to the same resource.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "10-10",
+          "type": "true_false",
+          "question_text": "Software rejuvenation involves periodic system reboots to maintain stability.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "10-11",
+          "type": "true_false",
+          "question_text": "The TMR approach requires five identical processes running in parallel.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "10-12",
+          "type": "true_false",
+          "question_text": "Load balancing helps distribute CPU and memory usage across systems.",
+          "correct_answer": "True"
+        },
+        {
+          "id": "10-13",
+          "type": "true_false",
+          "question_text": "Forward error recovery involves rolling back to a previous checkpoint.",
+          "correct_answer": "False"
+        },
+        {
+          "id": "10-14",
+          "type": "true_false",
+          "question_text": "Self-healing systems can recover from failures without human intervention.",
+          "correct_answer": "True"
+        }
+      ]
+    }
+  ]
+}

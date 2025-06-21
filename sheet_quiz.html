@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="sheet-title">حل الشيت - أنظمة موزعة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="quiz-header"></h1>
+        <div class="mode-toggle">
+            <button id="solve-mode-btn" class="btn active">وضع الحل</button>
+            <button id="view-answers-mode-btn" class="btn">عرض الإجابات</button>
+        </div>
+
+        <div id="quiz-section">
+            <form id="quiz-form" class="quiz-form">
+                </form>
+            <button id="submit-quiz-btn" class="btn btn-primary">عرض النتيجة</button>
+        </div>
+
+        <div id="results-section" class="results-section" style="display:none;">
+            <h2>نتيجتك: <span id="score-display"></span></h2>
+            <div id="review-section">
+                </div>
+            <button onclick="window.location.href='index.html'" class="btn btn-secondary">العودة للصفحة الرئيسية</button>
+        </div>
+
+        <div id="answers-section" class="answers-section" style="display:none;">
+            <h2>الإجابات الصحيحة</h2>
+            <div id="correct-answers-display">
+                </div>
+            <button onclick="window.location.href='index.html'" class="btn btn-secondary">العودة للصفحة الرئيسية</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sheetName = urlParams.get('sheet');
+            if (sheetName) {
+                loadSheetForQuiz(sheetName); // Function to load a specific sheet from script.js
+            } else {
+                // Handle case where no sheet is specified (e.g., redirect to index)
+                window.location.href = 'index.html';
+            }
+
+            document.getElementById('solve-mode-btn').addEventListener('click', () => toggleMode('solve'));
+            document.getElementById('view-answers-mode-btn').addEventListener('click', () => toggleMode('answers'));
+            document.getElementById('submit-quiz-btn').addEventListener('click', submitQuiz); // Function from script.js
+        });
+    </script>
+</body>
+</html>
