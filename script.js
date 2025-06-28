@@ -200,6 +200,13 @@ function displayResults(questions, userAnswers, resultsSectionId, scoreDisplayId
 
     scoreDisplay.textContent = `${correctCount} من ${questions.length}`;
     resultsSection.style.display = 'block';
+    // Push quiz result to dataLayer for GTM
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'quizSubmitted',
+            correctAnswers: correctCount,
+            totalQuestions: questions.length
+        });
 }
 
 function displayCorrectAnswers(questions, displayElementId) {
@@ -227,13 +234,7 @@ function displayCorrectAnswers(questions, displayElementId) {
         correctAnswerText.textContent = `الإجابة الصحيحة: ${answerContent}`;
         answerItem.appendChild(correctAnswerText);
         displayElement.appendChild(answerItem);
-        // Push quiz result to dataLayer for GTM
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            event: 'quizSubmitted',
-            correctAnswers: correctCount,
-            totalQuestions: questions.length
-        });
+        
     });
 }
 
