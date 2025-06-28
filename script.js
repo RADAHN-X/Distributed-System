@@ -226,8 +226,14 @@ function displayCorrectAnswers(questions, displayElementId) {
         }
         correctAnswerText.textContent = `الإجابة الصحيحة: ${answerContent}`;
         answerItem.appendChild(correctAnswerText);
-
         displayElement.appendChild(answerItem);
+        // Push quiz result to dataLayer for GTM
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'quizSubmitted',
+            correctAnswers: correctCount,
+            totalQuestions: questions.length
+        });
     });
 }
 
